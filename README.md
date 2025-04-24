@@ -10,12 +10,39 @@ Run the following command to install the dependencies:
 pip install -r requirements.txt
 ```
 
-# Tests Coverage
+# Tests
 
 Run the following command to run the tests:
 
 ```bash
 pytest --cov=src unittest/
+```
+
+# Coverage
+
+100% currently.
+
+```bash
+(venv) opengl106@labmikazu-v2:/mnt/d/pj_foucauldian/pj_c/sp_aneros$ pytest --cov=src --ignore=/mnt unittest/
+================================================= test session starts ==================================================
+platform linux -- Python 3.8.10, pytest-8.3.5, pluggy-1.5.0
+rootdir: /mnt/d/[LABMIKAZU]/[3-SECRET]/pj_foucauldian/pj_c/sp_aneros
+plugins: cov-5.0.0, mock-3.14.0
+collected 10 items
+
+unittest/test_bank.py .....                                                                                      [ 50%]
+unittest/test_bankaccount.py .....                                                                               [100%]
+
+---------- coverage: platform linux, python 3.8.10-final-0 -----------
+Name              Stmts   Miss  Cover
+-------------------------------------
+src/__init__.py       0      0   100%
+src/classes.py       54      0   100%
+-------------------------------------
+TOTAL                54      0   100%
+
+
+================================================== 10 passed in 0.40s ==================================================
 ```
 
 # Example Usage
